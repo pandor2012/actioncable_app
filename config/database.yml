@@ -22,7 +22,11 @@ default: &default
 
 development:
   <<: *default
+  host: 127.0.0.1
+  username: root
   database: actioncable_app_development
+  password: password
+  encoding: unicode
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
